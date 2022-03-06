@@ -1,0 +1,16 @@
+# やったこと
+- Spring Initializrでアプリケーションのひな型を作成
+-- Spring Web,Spring Boot Actuator,Thymeleaf追加
+-- ダウンロードしたdemoディレクトリをeclipse内へ移す
+- コマンドプロンプトを立ち上げる
+- コマンドプロンプトにて作業する場所をdemoディレクトリに変更
+- Mavenでビルドする　mvnw clean install
+- Spring Bootアプリケーションの起動　mvnw spring-boot:run
+- コマンドプロンプトで作成したひな型をeclipseに取り込む
+- pom.xmlを編集
+-- propertiesに1行追加　<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+- 新規javaパッケージの作成　src/main/java/com.example.demo.controller
+- controllerパッケージにIndexControllerクラスを追加
+- index.htmlファイルを作成　src/main/resources/templates/index.html
+- local.port8080が使用中とのエラーが発生したため新規port番号を指定　
+-- application.propertiesにて「server.port=9000」と指定
